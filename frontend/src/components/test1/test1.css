@@ -1,0 +1,98 @@
+.test1 p,h2{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.test1-timer{
+    background-color: rgb(2, 2, 92);
+    color: white;
+    text-align: right;
+    padding: 4px;
+    padding-right: 20px
+}
+.section2{
+    background-color: white;
+    padding: 6px;
+    border: 1px solid;
+}
+.section2 p{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.test1-qn-type{
+    float: left;
+}
+.test1-points{
+    display: flex;
+    justify-content: end;
+}
+.section3{
+    display: flex;
+    
+}
+.test1-qn-no{
+    width: 50px;
+    padding: 15px;
+    justify-content: center;
+    border: 1px solid;
+}
+.test1-qn{
+    padding: 15px;
+    height: 400px;
+    width: 1000px;
+    border: 1px solid;
+}
+.test1-qn-options{
+    padding: 10px;
+}
+.test1-qn-options input{
+    margin: 10px;
+}
+.test1-navigate-qn-bts{
+    border: 1px solid;
+    width: 380px;
+}
+.test1-navigate-qn-bts button{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(194, 187, 187);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px;
+}
+.test1-navigate-qn-bts button:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.test1-save{
+    padding-left: 20px;
+    float: left;
+}
+.test1-submit{
+    padding-right: 20px;
+    float: right;
+}
+.test1-save button{
+    background-color: rgb(26, 6, 209);
+    color: white;
+    border: 1px solid rgb(194, 187, 187);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px;
+}
+.test1-save button:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    
+}
+.test1-submit button{
+    background-color: rgb(6, 209, 67);
+    color: white;
+    border: 1px solid rgb(194, 187, 187);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px;
+}
+.test1-submit button:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    
+}
