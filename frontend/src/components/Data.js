@@ -10,6 +10,7 @@ export const questions = [
             { answerText: 'Dublin', isCorrect: false },
         ],
     },
+    
     {
         questionText: 'Who is CEO of Tesla?',
         points:2,
