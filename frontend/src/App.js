@@ -7,6 +7,7 @@ import Exam from './components/Exam';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
 import Test1 from './components/test1/Test1';
+
 function App() {
   const [ user, setLoginUser] = useState({})
 
@@ -37,6 +38,7 @@ function App() {
           <Route path='/login' ><Login updateUser={updateUser}/></Route>
           <Route path='/register' ><Register/></Route>
           <Route path='/test1'> <Test1/> </Route>
+          
         </Switch>
       </Router>
       

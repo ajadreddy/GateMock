@@ -5,9 +5,11 @@ import mongoose from "mongoose"
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded())
-app.use(cors()) 
+app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017/QuizzDb", {
+const DB = 'mongodb+srv://ajadreddy:1234@cluster0.jawpa.mongodb.net/QuizzDb?retryWrites=true&w=majority';
+
+mongoose.connect(DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, () => {
@@ -24,7 +26,7 @@ const User = new mongoose.model("User", userSchema)
 
 //Routes
 app.post("/login", (req, res)=> {
-    const { email, password} = req.body 
+    const { email, password} = req.body
     User.findOne({ email: email}, (err, user) => {
         if(user){
             if(password === user.password ) {
@@ -46,7 +48,7 @@ app.post("/register", (req, res)=> {
         } else {
             const user = new User({
                 name,
-                email, 
+                email,
                 password
             })
             user.save(err => {
@@ -59,9 +61,8 @@ app.post("/register", (req, res)=> {
         }
     })
     
-})
-
+}) 
 
 app.listen(9001,() => {
     console.log("BE started at port 9001")
-}) 
+})
