@@ -1,11 +1,9 @@
-import React from 'react';
-import Navbar from './Navbar';
-import { useHistory } from 'react-router-dom';
-const Home = () => {
-      let history=useHistory();
-  return <>
-  <Navbar></Navbar>
-  <>
+import React from 'react'
+import { useHistory } from 'react-router'
+const Test2 = () => {
+    let history=useHistory();
+  return (
+      <>
       <h2 className="text-xl font-semibold text-center">GATE past year question papers</h2>
     <div className=" flex flex-wrap justify-center">
         <div className="block p-6 m-6 rounded-lg shadow-lg bg-white max-w-sm">
@@ -83,7 +81,7 @@ const Home = () => {
         </div>
     </div>
     </>
-  </>;
-};
+  )
+}
 
-export default Home;
+export default Test2

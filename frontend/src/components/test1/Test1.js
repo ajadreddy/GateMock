@@ -28,9 +28,6 @@ const Test1 = () => {
             setShowScore(true);
         }
     }
-    const navigate =()=>{
-
-    }
     const savenext =(answerOption)=>{
         setSelectedOption(answerOption)
     }
