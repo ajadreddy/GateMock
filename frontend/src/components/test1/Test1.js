@@ -13,13 +13,10 @@ const Test1 = () => {
     const handleAnswerOptionClick = (selectedOption)=>{
 
         if(selectedOption){
-            if(selectedOption.isCorrect)
-            {
+            if(selectedOption.isCorrect){
                 setScore(score+1);
-            }
-            
+            }   
         }
-
         const nextQuestion = currentQuestion+1;
         if(nextQuestion<questions.length){
             setCurrentQuestion(nextQuestion);
@@ -37,7 +34,7 @@ const Test1 = () => {
           array.push(<button>{i}</button>)
         }
         return array
-      }
+    }
     
   return (
     <div className="test1">
@@ -57,24 +54,24 @@ const Test1 = () => {
         <div className="section3">
             <div className="test1-qn-no">Q:{currentQuestion +1}</div>
             <div className="test1-qn">
-            <p>{questions[currentQuestion].questionText}</p>
-            <div className="test1-qn-options">
-                {questions[currentQuestion].answerOptions.map((answerOption)=>(
-                    <div onClick={()=>savenext(answerOption)}>
-                        <input name="a" type="radio" />{answerOption.answerText} <br />
-                    </div>
-                ))}
+                <p>{questions[currentQuestion].questionText}</p>
+                <div className="test1-qn-options">
+                    {questions[currentQuestion].answerOptions.map((answerOption)=>(
+                        <div onClick={()=>savenext(answerOption)}>
+                            <input name="a" type="radio" />{answerOption.answerText} <br />
+                        </div>
+                    ))}
+                </div>
             </div>
+            <div className="test1-navigate-qn-bts">
+            {getButtonsUsingForLoop(questions.length)}
+            {/* {questions[currentQuestion].answerOptions.map(()=>(
+                <div>
+                    <button>{currentQuestion+1}</button>
+                </div>
+            ))} */}
+            </div>  
         </div>
-        <div className="test1-navigate-qn-bts">
-        {getButtonsUsingForLoop(questions.length)}
-        {/* {questions[currentQuestion].answerOptions.map(()=>(
-            <div>
-                <button>{currentQuestion+1}</button>
-            </div>
-        ))} */}
-        </div>  
-    </div>
     <div className="section4">
         <div className="test1-save"><button onClick={()=>handleAnswerOptionClick(selectedOption)}>Save n Next</button></div>
         <div className="test1-submit"><button>Submit</button></div>
