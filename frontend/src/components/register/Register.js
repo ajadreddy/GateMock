@@ -1,5 +1,4 @@
 import React from 'react'
-import "./register.css"
 import { useHistory  } from "react-router-dom"
 import axios from "axios"
 import { useState } from 'react'
@@ -37,18 +36,6 @@ const Register = () => {
     }
 
   return (
-    // <div className='register'>
-    //     <h1>Register</h1>
-    //     <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={ handleChange }></input> <br/>
-    //     <input type="text" name="email" value={user.email}  placeholder="Your Email" onChange={ handleChange }></input><br/>
-    //     <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={ handleChange }></input><br/>
-    //     <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }></input><br/>
-    //     <div className="button" onClick={register}  >Register</div>
-    //     <div style={{display:"flex",justifyContent:"center"}}>
-    //       <div>Have have an account?</div>
-    //       <div style={{color:"blueviolet",cursor:"pointer"}}  onClick={()=>history.push('/login')} >Login</div>
-    //     </div>
-    // </div>
     <>
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
     <div className="px-8 py-6 mx-4 mt-4 text-left bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
@@ -92,7 +79,7 @@ const Register = () => {
                 </div>
                 <div className="mt-6 text-grey-dark">
                     Already have an account?
-                    <a className="text-blue-600 hover:underline"  onClick={()=>history.push('/login')}>
+                    <a className="text-blue-600 hover:underline" href=" " onClick={()=>history.push('/login')}>
                         Log in
                     </a>
                 </div>

@@ -25,27 +25,10 @@ const Test4 = () => {
         if(nextQuestion<questions.length){
             setCurrentQuestion(nextQuestion);
         }
-        // else{
-        //     setShowScore(true);
-        // }
     }
     const savenext =(answerOption)=>{
         setSelectedOption(answerOption)
     }
-    
-    
-    // const startingMinutes =10;
-    // let time = startingMinutes * 60;
-    // const updatecountDown = () => {
-    //     const minutes = Math.floor(time/60);
-    //     const seconds = time % 60;
-        
-
-
-    //     time--;
-    // }
-    // setInterval(updatecountDown,1000);
-
 
     let count =10;
     const countDown =()=>{
