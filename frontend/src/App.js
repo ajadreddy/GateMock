@@ -36,7 +36,6 @@ function App() {
           <Route path='/register' ><Register/></Route>
           <Route path='/test4'><Test4/></Route>
           <Route path='/'><LandingPage/></Route>
-          
         </Switch>
       </Router>
       
