@@ -1,4 +1,5 @@
 import React from 'react'
+import {Circle} from 'react-shapes'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { questions } from '../Data'
@@ -71,10 +72,10 @@ const Test4 = () => {
             </div>
             <div className='w-1/4 border border-l-2 border-b-0 border-solid '>
                 <div className='p-5 flex grid grid-cols-2 justify-center'>
-                    <h2 className='p-5 '> <span className='w-24 h-24 rounded-xl bg-sky-500'></span> Answered </h2>
-                    <h2 className='p-5'><span style={{}}></span> Mark for review</h2>
-                    <h2 className='p-5'><span>&#9711;</span> Not visited</h2>
-                    <h2 className='p-5'><span>&#9711;</span> Not Answered</h2>
+                    <h2 className='p-5 '> <Circle r={12} fill={{color:'rgb(7, 163, 7)'}} stroke={{color:'rgb(0,0,0'}} strokeWidth={1}/> Answered </h2>
+                    <h2 className='p-5'><span><Circle r={12} fill={{color:'rgb(84, 34, 202'}} stroke={{color:'rgb(0,0,0'}} strokeWidth={1}/></span> Mark for review</h2>
+                    <h2 className='p-5'><span><Circle r={12} fill={{color:'rgb(255, 255, 255)'}} stroke={{color:'rgb(0,0,0'}} strokeWidth={1}/></span> Not visited</h2>
+                    <h2 className='p-5'><span><Circle r={12} fill={{color:'rgb(214, 27, 27)'}} stroke={{color:'rgb(0,0,0'}} strokeWidth={1}/></span> Not Answered</h2>
                 </div>
                 <div className='h-96'>
                     {questions.map((item,i)=>{
