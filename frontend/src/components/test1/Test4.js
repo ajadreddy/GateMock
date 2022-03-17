@@ -11,8 +11,8 @@ const Test4 = () => {
     const [showScore, setShowScore] = useState(false);
     const [score,setScore] = useState(0);
     const [selectedOption,setSelectedOption] = useState(null);
-    const handleAnswerOptionClick = (selectedOption)=>{
 
+    const handleAnswerOptionClick = (selectedOption)=>{
         if(selectedOption){
             if(selectedOption.isCorrect){
                 setScore(score + parseInt(questions[currentQuestion].points));
@@ -26,35 +26,26 @@ const Test4 = () => {
             setCurrentQuestion(nextQuestion);
         }
     }
+
     const savenext =(answerOption)=>{
         setSelectedOption(answerOption)
     }
 
-    let count =10;
-    const countDown =()=>{
-        count = count-1;
-    }
-    setInterval(countDown,1000)
 
   return (
     <>
     {showScore?(
         <div className='grid place-content-center h-96'>
             <h2 className='text-2xl mb-2'>You scored {score} out of {questions.length}</h2>
-            <div>
-                <p>Oka 1000 paytm kottu </p>
-                <p>lekapothe ee markulu mee ayyaku pamputha</p>
-            </div>
             <div className='grid grid-cols-2 place-content-center'>
                 <button onClick={()=>{history.push('/')}} className='w-23 px-2 py-1 text-base font-semibold text-white border-2 bg-sky-400 hover:bg-sky-500 rounded'>Home</button>
-                <button className='w-23 px-2 py-1 text-base font-semibold text-white border-2 bg-slate-900 hover:bg-slate-500 rounded'>Link for Payment</button>
             </div>
         </div>
         
     ):(
         <>
         <div className=' bg-blue-600 h-10 p-2'>
-        <h2 className='absolute text-white right-2'>Time Left : {count}</h2>
+        <h2 className='absolute text-white right-2'>Time Left : </h2>
         </div>
         <div className='flex'>
             <div className='w-3/4'>
@@ -79,11 +70,11 @@ const Test4 = () => {
                 </div>
             </div>
             <div className='w-1/4 border border-l-2 border-b-0 border-solid '>
-                <div className='p-5 flex flex-wrap justify-center'>
-                    <h2 className='p-5 '>Answered</h2>
-                    <h2 className='p-5'>Mark for review</h2>
-                    <h2 className='p-5'>Not visited</h2>
-                    <h2 className='p-5'>Not Answered</h2>
+                <div className='p-5 flex grid grid-cols-2 justify-center'>
+                    <h2 className='p-5 '> <span className='w-24 h-24 rounded-xl bg-sky-500'></span> Answered </h2>
+                    <h2 className='p-5'><span style={{}}></span> Mark for review</h2>
+                    <h2 className='p-5'><span>&#9711;</span> Not visited</h2>
+                    <h2 className='p-5'><span>&#9711;</span> Not Answered</h2>
                 </div>
                 <div className='h-96'>
                     {questions.map((item,i)=>{
@@ -94,7 +85,6 @@ const Test4 = () => {
                         ) 
                     })}
                 </div>
-                
             </div>
         </div>
         <div className='flex  p-5 '>

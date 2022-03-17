@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import { useHistory } from "react-router-dom";
+import Footer from '../Footer';
 const Cse = () => {
 
     let history = useHistory();
@@ -91,6 +92,7 @@ const Cse = () => {
         </div>
         
     </div>
+    <Footer></Footer>
   </>;
 };
 

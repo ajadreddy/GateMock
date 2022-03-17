@@ -24,20 +24,10 @@ const login = () => {
     .then(res => {
         alert(res.data.message)
         updateUser(res.data.user)
-        history.push("/")
+        history.push("/home")
     })
 }
   return (
-    // <div className='login'>
-    //     <h1>Login</h1>
-    //     <input type="text" name="email" value={user.email} onChange={handleChange}  placeholder="Your Email" ></input><br/>
-    //     <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Your Password" ></input><br/>
-    //     <div className="button" onClick={login}  >Login</div>
-    //     <div style={{display:"flex",justifyContent:"center"}}>
-    //       <div>Don't have an account?</div>
-    //       <div style={{color:"blueviolet",cursor:"pointer"}}  onClick={()=>history.push('/register')} >Register</div>
-    //     </div>
-    // </div>
     <>
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
     <div className="px-8 py-6 mx-4 mt-4 text-left bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
