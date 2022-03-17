@@ -34,11 +34,11 @@ const LandingPage = () => {
         </div>
         <div className='p-5'>
           <h1 className='text-xl'>Exam categories</h1>
-          <h1 className='text-center text-4xl p-4'>25+</h1>
+          <h1 className='text-center text-6xl p-4'>25+</h1>
         </div>
         <div className='p-5'>
           <h1 className='text-xl'>Question papers</h1>
-          <h1 className='text-center text-4xl p-4'>300+</h1>
+          <h1 className='text-center text-6xl p-4'>300+</h1>
         </div>
     </div>
     <Footer></Footer>
