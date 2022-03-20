@@ -5,12 +5,12 @@ import mongoose from "mongoose"
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded())
-const corsOptions ={
-    origin:'http://localhost:3000', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions))
+// const corsOptions ={
+//     origin:'http://localhost:3000', 
+//     credentials:true,            //access-control-allow-credentials:true
+//     optionSuccessStatus:200
+// }
+app.use(cors())
 
 const DB = 'mongodb+srv://ajadreddy:1234@cluster0.jawpa.mongodb.net/QuizzDb?retryWrites=true&w=majority';
 
@@ -57,7 +57,7 @@ app.post("/register", (req, res)=> {
                 password
             })
             user.save(err => {
-                if(err) {
+                if(err) {  
                     res.send(err)
                 } else {
                     res.send( { message: "Successfully Registered, Please login now." })

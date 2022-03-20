@@ -20,7 +20,7 @@ const handleChange = e => {
 }
 // https://git.heroku.com/gatemock.git
 const login = () => {
-    axios.post("/login", user)
+    axios.post("http://localhost:9001/login", user)
     .then(res => {
         alert(res.data.message)
         updateUser(res.data.user)

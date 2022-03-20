@@ -18,14 +18,14 @@ const Register = () => {
         const { name, value } = e.target
         setUser({
             ...user,
-            [name]: value 
+            [name]: value  
         })
     }
-
+ 
     const register = () => {
         const { name, email, password, reEnterPassword } = user
         if( name && email && password && (password === reEnterPassword)){
-            axios.post("/register", user)
+            axios.post("http://localhost:9001/register", user)
             .then( res => {
                 alert(res.data.message)
                 history.push("/login")
