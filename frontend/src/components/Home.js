@@ -5,11 +5,25 @@ import Footer from './Footer';
 const Home = () => {
 
       let history=useHistory();
-      
+
+    //   const subList = ['CSE','ECE','EE','CE','ME'];
+    //   const items = subList.map((item)=>
+    //   <div className="block p-6 m-6 rounded-lg shadow-lg bg-white max-w-sm" >
+    //     <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">GATE {item} </h5>
+    //     <p className="text-gray-700 text-base mb-4">
+    //     All Last Year Question Papers
+    //     </p>
+    //     <button onClick={()=>{history.push('/cse')}} type="button" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+    //         Take Test
+    //     </button>
+    //   </div>
+    //   )
+
   return <>
   <Navbar></Navbar>
   <>
-      <h2 className="text-xl font-semibold text-center">GATE past year question papers</h2>
+    <h2 className="text-xl font-semibold text-center">GATE past year question papers</h2>
+    {/* <div className=" flex flex-wrap justify-center" >{items}</div> */}
     <div className=" flex flex-wrap justify-center">
         <div className="block p-6 m-6 rounded-lg shadow-lg bg-white max-w-sm">
             <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">Gate CSE</h5>
