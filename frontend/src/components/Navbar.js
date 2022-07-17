@@ -14,7 +14,6 @@ const Navbar = () => {
       <div className='flex bg-blue-600 h-12'>
         <div className='p-2 font-semibold text-white text-2xl'><a href="/home">Mock Test</a></div>
         <div className='p-2 '>
-          {/* <button></button> */}
           <button className='absolute right-20 w-20' onClick={()=>{history.push('/profile')}}>
             <Avatar color='white'  size='35' round='50px'/>
           </button>
