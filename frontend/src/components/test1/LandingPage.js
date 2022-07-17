@@ -6,7 +6,9 @@ const LandingPage = () => {
   return (
     <>
     <div>
+    
       <div className='grid place-content-center'><img src="./ExamPREP.png" alt="" className='h-60'/></div>
+      
       <div className="text-5xl grid place-content-center"><h1>ExamPREP.Com</h1></div>
       <div className="text-2xl grid place-content-center"><h2>Your Exam Our Responsibility</h2></div>
       <div className='flex p-10 place-content-center'>

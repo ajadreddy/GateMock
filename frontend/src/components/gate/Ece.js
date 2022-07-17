@@ -1,12 +1,12 @@
-import {React} from 'react';
+import React from 'react'
 import Navbar from '../Navbar';
 import { useHistory } from "react-router-dom";
 import Footer from '../Footer';
-// import { useState } from 'react';
-const Cse = () => {
+
+const Ece = () => {
 
     let history = useHistory();
-    
+
     const n=10;
     let year=2022;
     const lst=[];
@@ -24,14 +24,14 @@ const Cse = () => {
         ) 
         year=year-1;  
     }
-    
-
-  return <>
-    <Navbar></Navbar>
+  return (
+    <>
+    <Navbar/>
     <div className='flex flex-wrap justify-center'>{lst}</div>
     
-    <Footer></Footer>
-  </>;
-};
+    <Footer/>
+    </>
+  )
+}
 
-export default Cse;
+export default Ece
