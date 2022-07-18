@@ -11,7 +11,7 @@ const Navbar = () => {
     window.location.href = '/';
   }
   return <>
-      <div className='flex bg-orange-400 h-12'>
+      <div className='flex bg-blue-600 h-12'>
         <div className='p-2 font-semibold text-white text-2xl'><a href="/home">Mock Test</a></div>
         {/* <div className='p-2 '>
           <button className='absolute right-20 w-20' onClick={()=>{history.push('/profile')}}>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='p-2 '>
-        <button className='absolute right-2 w-20 px-2 py-1 text-base font-semibold text-white bg-orange-500 hover:bg-orange-600 rounded' onClick={logout}>Logout</button>
+        <button className='absolute right-2 w-20 px-2 py-1 text-base font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded' onClick={logout}>Logout</button>
         </div>
     </div>
   </>;

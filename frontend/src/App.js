@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-    <div className='bg-black text-center  font-semibold text-white '><h1>This app is developed by Ajad Reddy Edavelly</h1></div>
+    {/* <div className='bg-black text-center  font-semibold text-white '><h1>This app is developed by Ajad Reddy Edavelly</h1></div> */}
       <Router>
         <Switch> 
           <Route exact path='/home' >
