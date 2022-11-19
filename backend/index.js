@@ -12,7 +12,7 @@ app.use(express.urlencoded())
 // }
 app.use(cors())
 
-const DB = 'mongodb+srv://ajadreddy:1234@cluster0.jawpa.mongodb.net/QuizzDb?retryWrites=true&w=majority';
+const DB = 'mongodb+srv://ajadreddy:1234@cluster0.jawpa.mongodb.net/test';
 
 mongoose.connect(DB, {
     useNewUrlParser: true,
