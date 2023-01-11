@@ -81,7 +81,7 @@ const Test4 = () => {
                     {questions.map((item,i)=>{
                         return(
                             <>
-                            <button onClick={()=>setCurrentQuestion(i)} className='ml-5 mb-5 w-7 bg-red-500 text-slate-50 border-black-400 border-2 rounded-full'>{i+1}</button>
+                            <button onClick={()=>setCurrentQuestion(i)} className='ml-4 mb-4 w-7  text-black-50 border-2 border-black rounded-sm'>{i+1}</button>
                             </>
                         ) 
                     })}
