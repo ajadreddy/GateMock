@@ -1,7 +1,7 @@
 export const questions = [
     {
         questionText: 'What is the capital of France?',
-        points:'+2',
+        points:'+1',
         Negative:-3,
         answerOptions: [
             { answerText: 'New York', isCorrect: false },
@@ -35,7 +35,7 @@ export const questions = [
     },
     {
         questionText: 'How many Harry Potter books are there?',
-        points:'+2',
+        points:'+1',
         Negative:0,
         answerOptions: [
             { answerText: '1', isCorrect: false },
@@ -44,48 +44,5 @@ export const questions = [
             { answerText: '7', isCorrect: true },
         ],
     },
-    {
-        questionText: 'How many Harry Potter books are there?',
-        points:'+2',
-        Negative:0,
-        answerOptions: [
-            { answerText: '1', isCorrect: false },
-            { answerText: '4', isCorrect: false },
-            { answerText: '6', isCorrect: false },
-            { answerText: '7', isCorrect: true },
-        ],
-    },
-    {
-        questionText: 'How many Harry Potter books are there?',
-        points:'+2',
-        Negative:0,
-        answerOptions: [
-            { answerText: '1', isCorrect: false },
-            { answerText: '4', isCorrect: false },
-            { answerText: '6', isCorrect: false },
-            { answerText: '7', isCorrect: true },
-        ],
-    },
-    {
-        questionText: 'How many Harry Potter books are there?',
-        points:'+2',
-        Negative:0,
-        answerOptions: [
-            { answerText: '1', isCorrect: false },
-            { answerText: '4', isCorrect: false },
-            { answerText: '6', isCorrect: false },
-            { answerText: '7', isCorrect: true },
-        ],
-    },
-    {
-        questionText: 'How many Harry Potter books are there?',
-        points:'+2',
-        Negative:0,
-        answerOptions: [
-            { answerText: '1', isCorrect: false },
-            { answerText: '4', isCorrect: false },
-            { answerText: '6', isCorrect: false },
-            { answerText: '7', isCorrect: true },
-        ],
-    },
+    
 ];

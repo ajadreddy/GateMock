@@ -88,7 +88,7 @@ const Test4 = () => {
                 </div>
             </div>
         </div>
-        <div className='flex  p-5 '>
+        <div className='flex  ml-4 '>
             <div className='w-3/4'>
                 <button className=' w-23 mr-6 px-2 py-1 text-base font-semibold text-white border-2 bg-sky-400 hover:bg-sky-500 rounded' onClick={()=>handleAnswerOptionClick(selectedOption)}>SAVE AND NEXT</button>
                 <button className=' w-23 mr-6 px-2 py-1 text-base font-semibold text-sky-400 border-2 border-solid border-sky-400 bg-transparent hover:bg-sky-500 hover:text-white rounded' >Mark for review and next</button>
