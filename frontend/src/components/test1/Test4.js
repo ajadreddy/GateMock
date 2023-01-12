@@ -3,9 +3,9 @@ import {Circle} from 'react-shapes'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { questions } from '../Data'
-
+import {BsCalculator} from 'react-icons/fa'
 const Test4 = () => {
-
+ 
     let history = useHistory();
      
     const [currentQuestion,setCurrentQuestion]=useState(0);
@@ -45,8 +45,9 @@ const Test4 = () => {
         
     ):(
         <>
-        <div className=' bg-blue-600 h-10 p-2'>
-        <h2 className='absolute text-white right-2'>Time Left : </h2>
+        <div className='flex bg-blue-600 h-10 p-2'>
+            <div className='text-white'>Calci</div>
+            <h2 className='text-white'>Time Left : </h2>
         </div>
         <div className='flex'>
             <div className='w-3/4'>
