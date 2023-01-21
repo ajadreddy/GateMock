@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Cse from './components/gate/Cse';
 import Test4 from './components/test1/Test4';
 import Ece from './components/gate/Ece';
+import ApiTest from './components/test1/ApiTest';
 function App() {
   
 
@@ -16,7 +17,7 @@ function App() {
           <Route path='/cse'><Cse/></Route>
           <Route path='/ece'><Ece/></Route>
           <Route path='/test4'><Test4/></Route>
-          {/* <Route path='/'><LandingPage/></Route> */}
+          <Route path='/api'><ApiTest/></Route>
           
         </Switch>
       </Router>
